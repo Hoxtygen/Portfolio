@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html    {
+    font-size: 100%;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+a   {
+    text-decoration: none;
+    color: pink;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+body {
+  background: #f7f7f7;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+header  {
+    /* border: 1px solid red; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #222;
+    color: ghostwhite;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+header .inner-header    {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+header .inner-header nav    {
+    display: flex;
+}
+
+header .inner-header nav ul {
+    display: flex;
+    border: 1px solid yellow;
+    align-items: center;
+}
+
+nav ul a {
+    border: 1px solid red;
+    display: block;
+    padding: .5rem 2rem;
+}
+
+section     {
+    border: 1px solid green;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #084d3b;
+}
+
+#hero   {
+    min-height: 100vh;
+}
+
+.content-container  {
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
