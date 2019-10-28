@@ -1,64 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Wasiu Idowu</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <header>
+      <div class="container">
         <div class="inner-header">
-            <div class="logo">
-                <h1>logo</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
+          <div class="logo">
+            <h1>Wasiu</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
-    
-    <main>
-        <section id="hero">
-            <div class="content-container">
-                <div class="image-container">
-                    <img src="https://via.placeholder.com/300" alt="">
-                </div>
-                <div class="name-container">
-                    <h2>Anton Van Leeuwenhoek</h2>
-                    <h3>World reknown Biologist</h3>
-                </div>
-            </div>
-        </section>
 
-        <section id="projects">
-            <div class="content-container">
-                <div class="project-item">
-                    <div class="project-content">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/500" alt="">
-                        </div><!-- project-image closed -->
-                        <div class="project-textContent">
-                            <h2>Random Quote Generator</h2>
-                        </div><!-- project-textContent closed -->
-                    </div><!-- project-content closed -->
-                    <div class="project-stack">
-                        <img src="https://via.placeholder.com/120x50" alt="react-image">
-                        <img src="https://via.placeholder.com/120x50" alt="node-image">
-                        <img src="https://via.placeholder.com/120x50" alt="heroku-image">
-                        <img src="https://via.placeholder.com/120x50" alt="postgres-image">
-                        <img src="https://via.placeholder.com/120x50" alt="styled-component-image">
-                    </div>
-                </div> <!-- project-item closed -->
-                <div class="project-item"></div>
-                <div class="project-item"></div>
-            </div><!-- project-container closed -->
-        </section>
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="content-container">
+            <div class="hero-content-container">
+              <div class="hero-info">
+                <div class="image-container">
+                  <img src="https://via.placeholder.com/300" alt="" />
+                </div>
+                <!-- <div class="name-container">
+                  <h2>Anton Von Leeuwenhoek</h2>
+                  <h3>World reknown Biologist</h3>
+                </div> -->
+              </div>
+              <!-- hero-info closed -->
+              <div class="hero-about">
+                <h1>About Me</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum, natus! Neque, maxime repellat eius quibusdam est velit
+                  hic excepturi eaque voluptatum, ad unde suscipit ut vero iusto
+                  a esse. Necessitatibus debitis qui sit culpa blanditiis
+                  architecto, dolore rem consequatur dolorum mollitia error
+                  similique quam ducimus hic a cum adipisci saepe.
+                </p>
+                <p>
+                  Sunt natus rem voluptatibus iste, provident omnis molestiae
+                  eum dolor, doloribus quae, quod unde. Laudantium voluptatem
+                  nisi, ipsa odit illo eveniet sapiente voluptatibus cum dolor
+                  reiciendis molestias animi accusantium molestiae eum in
+                  aspernatur unde, vero, natus numquam expedita perferendis qui
+                  commodi tempore. Quaerat reiciendis fugit nisi officia
+                  distinctio nam sed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="content-container">
+            <div class="project-header">
+              <h1>Projects</h1>
+            </div>
+            <div class="project-item top">
+              <div class="project-content">
+                <div class="project-image">
+                  <img
+                    src="https://via.placeholder.com/600x302"
+                    alt=""
+                    class="center-block"
+                  />
+                </div>
+                <!-- project-image closed -->
+                <div class="project-textContent">
+                  <h2>
+                    <a
+                      href="https://hoxtygen-library.herokuapp.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Library
+                    </a>
+                  </h2>
+                  <p>
+                    A web application to help fitness enthusiasts track their
+                    workout routines on a daily basis
+                  </p>
+                  <h4>Technology</h4>
+                  <p>
+                    befittracker.com is built using reactjs, with a node backend
+                    for handling API requests, and runs on Heroku. Heroku
+                    provides the database solution and Styled components is the
+                    CSS framework of choice for this project.
+                  </p>
+                </div>
+                <!-- project-textContent closed -->
+              </div>
+              <!-- project-content closed -->
+              <div class="project-stack">
+                <img
+                  src="./assets/images/Reactjs-logo-e1523253944211.png"
+                  alt="react-image"
+                />
+                <img
+                  src="./assets/images/node-js-736399_960_720.png"
+                  alt="node-image"
+                />
+                <img src="./assets/images/heroku-logo.png" alt="heroku-image" />
+                <img
+                  src="./assets/images/postgresqllogo-580x358.png"
+                  alt="postgres-image"
+                />
+                <img
+                  src="./assets/images/styled-comp logo.jpg"
+                  alt="styled-component-image"
+                />
+              </div>
+              <div class="link-container">
+                <a href="#">Visit Site</a>
+              </div>
+            </div>
+            <!-- project-item closed -->
+            <div class="project-item">
+              <div class="project-content">
+                <div class="project-image">
+                  <img
+                    src="https://via.placeholder.com/600x302"
+                    alt=""
+                    class="center-block"
+                  />
+                </div>
+                <!-- project-image closed -->
+                <div class="project-textContent">
+                  <h2>
+                    <a
+                      href="https://hoxtygen-library.herokuapp.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Library
+                    </a>
+                  </h2>
+                  <p>
+                    A web application to help fitness enthusiasts track their
+                    workout routines on a daily basis
+                  </p>
+                  <h4>Technology</h4>
+                  <p>
+                    befittracker.com is built using reactjs, with a node backend
+                    for handling API requests, and runs on Heroku. Heroku
+                    provides the database solution and Styled components is the
+                    CSS framework of choice for this project.
+                  </p>
+                </div>
+                <!-- project-textContent closed -->
+              </div>
+              <!-- project-content closed -->
+              <div class="project-stack">
+                <img
+                  src="./assets/images/Reactjs-logo-e1523253944211.png"
+                  alt="react-image"
+                />
+                <img
+                  src="./assets/images/node-js-736399_960_720.png"
+                  alt="node-image"
+                />
+                <img src="./assets/images/heroku-logo.png" alt="heroku-image" />
+                <img
+                  src="./assets/images/postgresqllogo-580x358.png"
+                  alt="postgres-image"
+                />
+                <img
+                  src="./assets/images/styled-comp logo.jpg"
+                  alt="styled-component-image"
+                />
+              </div>
+              <div class="link-container">
+                <a href="#">Visit Site</a>
+              </div>
+            </div>
+            <div class="project-item"></div>
+          </div>
+          <!-- project-container closed -->
+        </div>
+        <!-- container closed-->
+      </section>
+      <!-- project closed -->
+
+      <section id="tools">
+        <container>
+          <div class="content-container">
+            <div class="tools-title">
+              <h3>Tools I Use</h3>
+            </div>
+            <div class="tools-image">
+              <img src="./assets/images/adobe-xd-logo.jpg" alt="" />
+              <img src="./assets/images/git-logo.png" alt="" />
+              <img src="./assets/images/visual-studio-code-1.svg" alt="" />
+              <img src="./assets/images/atom-4.svg" alt="" />
+              <img src="./assets/images/firefox-3.svg" alt="" />
+              <img src="./assets/images/chrome.svg" alt="" />
+            </div>
+          </div>
+        </container>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="content-container">
+            <div class="contact-wrapper">
+              <div class="contact-title">
+                <h3>Contact</h3>
+              </div>
+              <div class="contact-container">
+                <div class="social-contact">
+                  <h3>Linkedin</h3>
+                  <h3>Twitter</h3>
+                  <h3>Github</h3>
+                  <h3>Facebook</h3>
+                </div>
+                <div class="form-contact">
+                  <form id="contact" action="" method="post">
+                    <fieldset>
+                      <input
+                        placeholder="Your name"
+                        type="text"
+                        tabindex="1"
+                        required
+                        autofocus
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <input
+                        placeholder="Your Email Address"
+                        type="email"
+                        tabindex="2"
+                        required
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <textarea
+                        placeholder="Type your Message Here...."
+                        tabindex="5"
+                        required
+                      ></textarea>
+                    </fieldset>
+                    <fieldset>
+                      <button
+                        name="submit"
+                        type="submit"
+                        id="contact-submit"
+                        data-submit="...Sending"
+                      >
+                        Submit
+                      </button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
