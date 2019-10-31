@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700|Montserrat:400,500,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700|Montserrat:400,500,700&display=swap");
 
 *,
 *::before,
@@ -41,7 +40,12 @@ dd {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6  {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Lora, serif;
 }
 
@@ -114,8 +118,8 @@ section {
   color: #fff;
 }
 
-#projects   {
-  background-color: #F7F7F7;
+#projects {
+  background-color: #f7f7f7;
 }
 
 .content-container {
@@ -142,6 +146,10 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .name-container {
@@ -154,7 +162,10 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* color: #ccc; */
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .project-item {
@@ -164,14 +175,19 @@ section {
   padding: 2rem;
 }
 
-
 .project-item .project-content {
   display: flex;
   flex-direction: row;
 }
 
 .project-item .project-image {
-  width: 66.6667%;
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.6667%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .center-block {
@@ -181,14 +197,23 @@ section {
 }
 
 .project-item .project-textContent {
-  width: 33.3333%;
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 33.3333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .project-item .project-stack {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0.4rem;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .project-item .project-stack img {
@@ -213,7 +238,7 @@ section {
   background-color: #438e8a;
 }
 
-#skills .skills-wrapper   {
+#skills .skills-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -221,8 +246,8 @@ section {
   align-items: center;
 }
 
-#skills button  {
-  padding: .5rem 1rem;
+#skills button {
+  padding: 0.5rem 1rem;
   background-color: #222;
   color: #fff;
   font-weight: 700;
@@ -233,7 +258,8 @@ section {
   border: none;
 }
 
-.skills-frontend, .skills-backend   {
+.skills-frontend,
+.skills-backend {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -241,14 +267,13 @@ section {
   padding: 1rem;
 }
 
-
 .contact-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.section-title  {
+.section-title {
   text-align: center;
   width: 100%;
   display: flex;
@@ -257,7 +282,7 @@ section {
   /* padding: 1.2rem; */
 }
 
-.section-title h2   {
+.section-title h2 {
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -275,48 +300,47 @@ section {
   align-items: center;
 }
 
-.contact-wrapper .social-contact a   {
+.contact-wrapper .social-contact a {
   display: block;
   background-color: rgb(98, 192, 22);
   width: 40%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   text-align: center;
-  padding: .4rem;
-  font-family: 'Roboto Condensed';
+  padding: 0.4rem;
+  font-family: "Roboto Condensed";
 }
 
-.contact-wrapper .social-contact a span   {
+.contact-wrapper .social-contact a span {
   margin-right: 5px;
 }
 
-.contact-wrapper .social-contact a.linkedin  {
+.contact-wrapper .social-contact a.linkedin {
   background-color: #007bb5;
   color: #fff;
 }
-.contact-wrapper .social-contact a.twitter  {
-  background-color: #00ACED;
+.contact-wrapper .social-contact a.twitter {
+  background-color: #00aced;
   color: #fff;
 }
 
-.contact-wrapper .social-contact a.github   {
+.contact-wrapper .social-contact a.github {
   background-color: #333;
   color: #fff;
 }
 
-.social-contact .contact-title   {
+.social-contact .contact-title {
   width: 100%;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-.contact-wrapper .social-contact h3   {
+.contact-wrapper .social-contact h3 {
   font-size: 1.5rem;
 }
 
 .contact-wrapper .form-contact {
   width: 50%;
 }
-
 
 #contact input[type="text"],
 #contact input[type="email"],
@@ -408,6 +432,88 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+
+@media (max-width: 600px) {
+  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .hero-content-container .hero-info, .hero-content-container .hero-about {
+    width: 100%;
+  }
+
+  .project-item .project-content  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-item .project-image, .project-item .project-textContent  {
+    max-width: 100%;
+  }
+
+  .project-item .project-stack {
+    flex-wrap: wrap;
+  }
+
+  .project-item .project-stack img {
+    margin-bottom: 10px;
+  }
+
+  .skills-frontend,
+.skills-backend  {
+  flex-wrap: wrap;
+}
+
+.skills-frontend button,
+.skills-backend  button   {
+  margin-bottom: 10px;
+}
+
+.contact-wrapper .social-contact  {
+  max-width: 30%;
+}
+
+.contact-wrapper .form-contact {
+  width: 70%;
+}
+
+.contact-wrapper .social-contact a {
+  width: 100%;
+}
+
+
+}
+
+@media (max-width: 768px) {
+  .project-item .project-content  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-item .project-image, .project-item .project-textContent  {
+    max-width: 100%;
+  }
+
+  .project-item .project-stack {
+    flex-wrap: wrap;
+}
+
+.skills-frontend,
+.skills-backend  {
+  flex-wrap: wrap;
+}
+
+.skills-frontend button,
+.skills-backend  button   {
+  margin-bottom: 10px;
+}
+
+}
+
+
 
 @media (min-width: 576px) {
   .container {
