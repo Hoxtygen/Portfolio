@@ -113,13 +113,17 @@ section {
 }
 
 #hero {
-  min-height: 100vh;
+  min-height: 80vh;
   background: #438e8a;
   color: #fff;
 }
 
 #projects {
   background-color: #f7f7f7;
+}
+
+#projects a  {
+  color: #222;
 }
 
 .content-container {
@@ -137,6 +141,8 @@ section {
   display: flex;
   flex-direction: row-reverse;
   padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content-container .hero-info {
@@ -212,8 +218,7 @@ section {
   justify-content: center;
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 15px;
 }
 
 .project-item .project-stack img {
